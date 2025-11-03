@@ -8,9 +8,15 @@
     "prepublishOnly": "npm run build"
   },
   "peerDependencies": {
-    "react": ">=17",
-    "react-dom": ">=17",
+    "@mui/icons-material": ">=5",
     "@mui/material": ">=5",
-    "@mui/icons-material": ">=5"
+    "react": ">=17",
+    "react-dom": ">=17"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.28.3",
+    "@babel/core": "^7.28.5",
+    "@babel/preset-env": "^7.28.5",
+    "@babel/preset-react": "^7.28.5"
   }
 }
