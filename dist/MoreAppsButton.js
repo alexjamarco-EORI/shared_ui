@@ -1,16 +1,18 @@
 "use strict";
 
+function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports["default"] = void 0;
-var _react = require("react");
+var _react = _interopRequireWildcard(require("react"));
 var _Apps = _interopRequireDefault(require("@mui/icons-material/Apps"));
 var _material = require("@mui/material");
 var _cabieIcs2Logo = _interopRequireDefault(require("../src/assets/images/cabie-ics2-logo.png"));
 var _CABIEENS = _interopRequireDefault(require("../src/assets/images/CABIE-ENS.png"));
 var _payGreyLogo = _interopRequireDefault(require("../src/assets/images/360pay-grey-logo.png"));
 function _interopRequireDefault(e) { return e && e.__esModule ? e : { "default": e }; }
+function _interopRequireWildcard(e, t) { if ("function" == typeof WeakMap) var r = new WeakMap(), n = new WeakMap(); return (_interopRequireWildcard = function _interopRequireWildcard(e, t) { if (!t && e && e.__esModule) return e; var o, i, f = { __proto__: null, "default": e }; if (null === e || "object" != _typeof(e) && "function" != typeof e) return f; if (o = t ? n : r) { if (o.has(e)) return o.get(e); o.set(e, f); } for (var _t in e) "default" !== _t && {}.hasOwnProperty.call(e, _t) && ((i = (o = Object.defineProperty) && Object.getOwnPropertyDescriptor(e, _t)) && (i.get || i.set) ? o(f, _t, i) : f[_t] = e[_t]); return f; })(e, t); }
 function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
 function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
@@ -33,18 +35,18 @@ var MoreAppsButton = function MoreAppsButton() {
     handleClose();
     // Add logic for clicking on each app option here
   };
-  return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(_material.IconButton, {
+  return /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, /*#__PURE__*/_react["default"].createElement(_material.IconButton, {
     onClick: handleClick,
     "aria-controls": openMenu ? 'apps-menu' : undefined,
     "aria-haspopup": "true",
     "aria-expanded": openMenu ? 'true' : undefined
-  }, /*#__PURE__*/React.createElement(_Apps["default"], {
+  }, /*#__PURE__*/_react["default"].createElement(_Apps["default"], {
     sx: {
       color: '#00395d',
       height: '40px',
       width: '40px'
     }
-  })), /*#__PURE__*/React.createElement(_material.Menu, {
+  })), /*#__PURE__*/_react["default"].createElement(_material.Menu, {
     id: "apps-menu",
     anchorEl: openMenu,
     open: !!openMenu,
@@ -52,13 +54,13 @@ var MoreAppsButton = function MoreAppsButton() {
     MenuListProps: {
       'aria-labelledby': 'apps-button'
     }
-  }, /*#__PURE__*/React.createElement("div", {
+  }, /*#__PURE__*/_react["default"].createElement("div", {
     style: {
       display: 'flex',
       justifyContent: 'center',
       borderBottom: '1px solid #eee'
     }
-  }, /*#__PURE__*/React.createElement("img", {
+  }, /*#__PURE__*/_react["default"].createElement("img", {
     src: _payGreyLogo["default"],
     alt: "CABIE 360Pay Logo",
     style: {
@@ -68,11 +70,11 @@ var MoreAppsButton = function MoreAppsButton() {
       marginBottom: 22,
       marginLeft: 10
     }
-  })), /*#__PURE__*/React.createElement(_material.MenuItem, {
+  })), /*#__PURE__*/_react["default"].createElement(_material.MenuItem, {
     onClick: function onClick() {
       return handleMenuItemClick('test1');
     }
-  }, /*#__PURE__*/React.createElement("img", {
+  }, /*#__PURE__*/_react["default"].createElement("img", {
     src: _cabieIcs2Logo["default"],
     alt: "CABIE ICS2 Logo",
     style: {
@@ -81,11 +83,11 @@ var MoreAppsButton = function MoreAppsButton() {
       marginTop: 22,
       marginBottom: 22
     }
-  })), /*#__PURE__*/React.createElement(_material.MenuItem, {
+  })), /*#__PURE__*/_react["default"].createElement(_material.MenuItem, {
     onClick: function onClick() {
       return handleMenuItemClick('test2');
     }
-  }, /*#__PURE__*/React.createElement("img", {
+  }, /*#__PURE__*/_react["default"].createElement("img", {
     src: _CABIEENS["default"],
     alt: "CABIE ENS Logo",
     style: {
