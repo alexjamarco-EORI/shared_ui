@@ -11,6 +11,7 @@ var _material = require("@mui/material");
 var _cabieIcs2Logo = _interopRequireDefault(require("../src/assets/images/cabie-ics2-logo.png"));
 var _CABIEENS = _interopRequireDefault(require("../src/assets/images/CABIE-ENS.png"));
 var _payGreyLogo = _interopRequireDefault(require("../src/assets/images/360pay-grey-logo.png"));
+var _jsxRuntime = require("react/jsx-runtime");
 function _interopRequireDefault(e) { return e && e.__esModule ? e : { "default": e }; }
 function _interopRequireWildcard(e, t) { if ("function" == typeof WeakMap) var r = new WeakMap(), n = new WeakMap(); return (_interopRequireWildcard = function _interopRequireWildcard(e, t) { if (!t && e && e.__esModule) return e; var o, i, f = { __proto__: null, "default": e }; if (null === e || "object" != _typeof(e) && "function" != typeof e) return f; if (o = t ? n : r) { if (o.has(e)) return o.get(e); o.set(e, f); } for (var _t in e) "default" !== _t && {}.hasOwnProperty.call(e, _t) && ((i = (o = Object.defineProperty) && Object.getOwnPropertyDescriptor(e, _t)) && (i.get || i.set) ? o(f, _t, i) : f[_t] = e[_t]); return f; })(e, t); }
 function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
@@ -35,67 +36,74 @@ var MoreAppsButton = function MoreAppsButton() {
     handleClose();
     // Add logic for clicking on each app option here
   };
-  return /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, /*#__PURE__*/_react["default"].createElement(_material.IconButton, {
-    onClick: handleClick,
-    "aria-controls": openMenu ? 'apps-menu' : undefined,
-    "aria-haspopup": "true",
-    "aria-expanded": openMenu ? 'true' : undefined
-  }, /*#__PURE__*/_react["default"].createElement(_Apps["default"], {
-    sx: {
-      color: '#00395d',
-      height: '40px',
-      width: '40px'
-    }
-  })), /*#__PURE__*/_react["default"].createElement(_material.Menu, {
-    id: "apps-menu",
-    anchorEl: openMenu,
-    open: !!openMenu,
-    onClose: handleClose,
-    MenuListProps: {
-      'aria-labelledby': 'apps-button'
-    }
-  }, /*#__PURE__*/_react["default"].createElement("div", {
-    style: {
-      display: 'flex',
-      justifyContent: 'center',
-      borderBottom: '1px solid #eee'
-    }
-  }, /*#__PURE__*/_react["default"].createElement("img", {
-    src: _payGreyLogo["default"],
-    alt: "CABIE 360Pay Logo",
-    style: {
-      height: '35px',
-      width: 'auto',
-      marginTop: 22,
-      marginBottom: 22,
-      marginLeft: 10
-    }
-  })), /*#__PURE__*/_react["default"].createElement(_material.MenuItem, {
-    onClick: function onClick() {
-      return handleMenuItemClick('test1');
-    }
-  }, /*#__PURE__*/_react["default"].createElement("img", {
-    src: _cabieIcs2Logo["default"],
-    alt: "CABIE ICS2 Logo",
-    style: {
-      height: '35px',
-      width: 'auto',
-      marginTop: 22,
-      marginBottom: 22
-    }
-  })), /*#__PURE__*/_react["default"].createElement(_material.MenuItem, {
-    onClick: function onClick() {
-      return handleMenuItemClick('test2');
-    }
-  }, /*#__PURE__*/_react["default"].createElement("img", {
-    src: _CABIEENS["default"],
-    alt: "CABIE ENS Logo",
-    style: {
-      height: '47px',
-      width: 'auto',
-      marginTop: 22,
-      marginBottom: 22
-    }
-  }))));
+  return /*#__PURE__*/(0, _jsxRuntime.jsxs)(_jsxRuntime.Fragment, {
+    children: [/*#__PURE__*/(0, _jsxRuntime.jsx)(_material.IconButton, {
+      onClick: handleClick,
+      "aria-controls": openMenu ? 'apps-menu' : undefined,
+      "aria-haspopup": "true",
+      "aria-expanded": openMenu ? 'true' : undefined,
+      children: /*#__PURE__*/(0, _jsxRuntime.jsx)(_Apps["default"], {
+        sx: {
+          color: '#00395d',
+          height: '40px',
+          width: '40px'
+        }
+      })
+    }), /*#__PURE__*/(0, _jsxRuntime.jsxs)(_material.Menu, {
+      id: "apps-menu",
+      anchorEl: openMenu,
+      open: !!openMenu,
+      onClose: handleClose,
+      MenuListProps: {
+        'aria-labelledby': 'apps-button'
+      },
+      children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
+        style: {
+          display: 'flex',
+          justifyContent: 'center',
+          borderBottom: '1px solid #eee'
+        },
+        children: /*#__PURE__*/(0, _jsxRuntime.jsx)("img", {
+          src: _payGreyLogo["default"],
+          alt: "CABIE 360Pay Logo",
+          style: {
+            height: '35px',
+            width: 'auto',
+            marginTop: 22,
+            marginBottom: 22,
+            marginLeft: 10
+          }
+        })
+      }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_material.MenuItem, {
+        onClick: function onClick() {
+          return handleMenuItemClick('test1');
+        },
+        children: /*#__PURE__*/(0, _jsxRuntime.jsx)("img", {
+          src: _cabieIcs2Logo["default"],
+          alt: "CABIE ICS2 Logo",
+          style: {
+            height: '35px',
+            width: 'auto',
+            marginTop: 22,
+            marginBottom: 22
+          }
+        })
+      }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_material.MenuItem, {
+        onClick: function onClick() {
+          return handleMenuItemClick('test2');
+        },
+        children: /*#__PURE__*/(0, _jsxRuntime.jsx)("img", {
+          src: _CABIEENS["default"],
+          alt: "CABIE ENS Logo",
+          style: {
+            height: '47px',
+            width: 'auto',
+            marginTop: 22,
+            marginBottom: 22
+          }
+        })
+      })]
+    })]
+  });
 };
 var _default = exports["default"] = MoreAppsButton;
