@@ -38,7 +38,6 @@ const BUTTONS = [{
 const MoreAppsButton = () => {
   const [openMenu, setOpenMenu] = (0, _react.useState)(null);
   const handleClick = event => {
-    console.log("Clicked More Apps", event.currentTarget);
     setOpenMenu(event.currentTarget);
   };
   const handleClose = () => {
