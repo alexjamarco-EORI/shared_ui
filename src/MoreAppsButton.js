@@ -34,7 +34,6 @@ const MoreAppsButton = () => {
   const [openMenu, setOpenMenu] = useState(null);
 
   const handleClick = (event) => {
-    console.log("Clicked More Apps", event.currentTarget);
     setOpenMenu(event.currentTarget);
   };
 
