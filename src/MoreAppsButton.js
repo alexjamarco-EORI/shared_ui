@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import AppsIcon from '@mui/icons-material/Apps';
 import { IconButton, Menu, MenuItem } from '@mui/material';
-import ICS2Logo from '../src/assets/images/cabie-ics2-logo.png';
-import ENSLogo from '../src/assets/images/CABIE-ENS.png';
-import logo360Pay from '../src/assets/images/360pay-grey-logo.png';
+import ICS2Logo from './assets/images/cabie-ics2-logo.png';
+import ENSLogo from './assets/images/CABIE-ENS.png';
+import logo360Pay from './assets/images/360pay-grey-logo.png';
 
 const MoreAppsButton = () => {
   const [openMenu, setOpenMenu] = useState(null);
