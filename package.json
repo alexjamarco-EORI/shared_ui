@@ -17,11 +17,11 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jawblia/npm-test.git"
+    "url": "git+https://github.com/alexjamarco-EORI/shared_ui.git"
   },
   "license": "ISC",
-  "scripts": {
-    "build": "rm -rf dist && babel src --out-dir dist --copy-files",
+    "scripts": {
+      "build": "rm -rf dist && babel src --out-dir dist --copy-files",
     "prepublishOnly": "npm run build"
   },
   "peerDependencies": {
