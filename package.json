@@ -1,10 +1,27 @@
 {
-  "name": "shared_ui",
-  "version": "1.0.0",
+  "name": "eori-more-apps",
+  "description": "More Apps button for EORI applications",
+  "author": "AJ",
+  "keywords": [
+    "react",
+    "components",
+    "ui"
+  ],
+  "version": "0.1.0",
+  "private": false,
   "main": "dist/index.js",
+  "module": "dist/index.js",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jawblia/npm-test.git"
+  },
   "license": "ISC",
   "scripts": {
-    "build": "babel src --out-dir dist --copy-files",
+    "build": "rm -rf dist && babel src --out-dir dist --copy-files",
     "prepublishOnly": "npm run build"
   },
   "peerDependencies": {
@@ -19,5 +36,8 @@
     "@babel/plugin-transform-react-jsx": "^7.27.1",
     "@babel/preset-env": "^7.28.5",
     "@babel/preset-react": "^7.28.5"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1"
   }
 }
